@@ -1,0 +1,43 @@
+/*universal selectors*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 70%;
+    margin: auto;
+    
+}
+
+
+form {
+    width: 100%;
+}
+
+h1 {
+    border: solid;
+    padding: 10px;
+    background-color:darkslategray;
+    margin-bottom: 2em;
+    color: floralwhite;
+}
+h2 {
+    padding: 10px 0;
+}
+header {
+    border-bottom: solid 5px black;
+    padding-bottom: 2rem;
+}
+.contact {
+    border-top: solid 2px black;
+    padding-top: 2rem;
+    margin-top: .5rem;
+}
+
+/*-----------form----------*/
+#name, #email, #phone, #address, #city, #state, #zip {
+    width: 90%;
+    height: 2rem;
+}
