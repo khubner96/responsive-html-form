@@ -8,6 +8,7 @@
 body {
     width: 100%;
     margin: auto;
+    font-family: 'Open Sans', sans-serif;
     
 }
 .thick {
@@ -36,7 +37,13 @@ form {
 }
 
 .top-form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
     padding-bottom: .5rem;
+    border: none;
+    
+    
 }
 h1 {
     border: solid;
@@ -47,17 +54,27 @@ h1 {
     text-align: center;
     
 }
+
+.signup {
+    text-align: center;
+}
+
 h2 {
     padding: 10px 0;
     font-size: 24px;
+    
+    
+}
+
+p {
+    margin-bottom: 1rem;
+    
 }
 header {
     
     padding-bottom: 0;
 }
-p {
-    margin-bottom: 1rem;
-}
+
 .contact {
     
     padding-top: 2rem;
@@ -65,6 +82,17 @@ p {
 }
 
 /*-----------form----------*/
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
 #name, #email, #phone, #address, #city, #state, #zip {
     width: 100%;
     height: 2rem;
@@ -73,6 +101,9 @@ p {
     border-radius: .3em;
     margin-bottom: 1em;
     
+}
+input[type]:focus {
+    border: 1px solid blue;
 }
 
 .newsletter input {
@@ -137,10 +168,19 @@ input[value] {
         
     .top-form {
         width: 100%;
-        display: inline-block;
+        
     }
     textarea {
         width: 100%;
+    }
+    div {
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
+    #zip {
+        width: 25%;
     }
    
        

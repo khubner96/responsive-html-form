@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -18,83 +19,109 @@
         
         <form action="index.html" method="get">
             <div class="form">
-                <h2>Signup for our newsletter</h2>
-        <p>get the latest news on how your code is doing right in your inbox</p>
+                <div class="signup">
+                    <h2>Signup for our newsletter</h2>
+                    <p>get the latest news on how your code is doing right in your inbox</p>
+                </div>
                 <hr class="thick">
                 <hr class="thin">
-             <h2 class="contact">Contact Information</h2>
-            <div class="top-form">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="user_name" placeholder="Required"><br>
-                
-                <div class="user">
-                <label for="email">Email Address</label>
-                <input type="text" id="email" name="user_email" placeholder="Required"><br>
+                <h2 class="contact">Contact Information</h2>
+
+            <fieldset class="top-form">
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="user_name" placeholder="Required"><br>
                 </div>
-                
-                <label for="phone">Phone Number</label>
-                <input type="text" id="phone" name="user_phone"><br>
-                
-                <label for="address">Street Address</label>
-                <input type="text" id="address" name="user_address"><br>
-                
-                <label for="city">City</label>
-                <input type="text" id="city" name="user_city"><br>
-                
+
+                <div class="user">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="user_email" placeholder="Required"><br>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="user_phone"><br>
+                </div>
+
+                <div>
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="user_address"><br>
+                </div>
+
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user_city"><br>
+                </div>
+
+                <div>
                 <label for="state">State</label>
-                <select name="user_state" id="state">
-                    <option value="
-                    " disabled selected>Choose State</option>
-                    <option value="Alabama">Alabama</option>
-                    <option value="Alaska">Alaska</option>
-                    <option value="Arizona">Arizona</option>
-                    <option value="Arkansas">Arkansas</option>
-                    <option value="California">California</option>
-                    <option value="Colorada">Colorado</option>
-                </select><br>
-                
-                <label for="zip">Zip Code</label><br>
-                <input type="text" id="zip" name="user_zip">
-                <hr class="thin">
-            </div>
+                    <select name="user_state" id="state">
+                        <option value="
+                        " disabled selected>Choose State</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorada">Colorado</option>
+                    </select><br>
+                </div>
+
+                <div>
+                    <label for="zip">Zip Code</label><br>
+                    <input type="text" id="zip" name="user_zip">
+                    <hr class="thin">
+                </div>
             
-            <div class="newsletter">
+            </fieldset>    
+            
+            <legend class="newsletter">
                 <h2>Newsletter</h2>
                 <p>Select the newsletters you would like to receive</p>
                 
-                <label for="html">
-                <input type="checkbox" id="html" name="news">
-                HTML News</label>
-                <br>
+                <div>
+                    <label for="html">
+                    <input type="checkbox" id="html" name="news">
+                    HTML News</label>
+                    <br>
+                </div>
+                
+                <div>
+                    <label for="css">
+                    <input type="checkbox" id="css" name="news">
+                    CSS News</label>
+                    <br>
+                </div>
 
-                <label for="css">
-                <input type="checkbox" id="css" name="news">
-                CSS News</label>
-                <br>
-
-                <label for="javascript">
-                <input type="checkbox" id="javascript" name="news">
-                Javascript News</label>
-                <br>
+                <div>
+                    <label for="javascript">
+                    <input type="checkbox" id="javascript" name="news">
+                    Javascript News</label>
+                    <br>
+                </div>
                 
                  <p class="news">Newsletter format</p>
-                
-                <label for="html">
-                <input type="radio" id="html" name="format">
-                HTML</label><br>
-                
-                <label for="plain">
-                <input type="radio" id="plain" name="format">
-                Plain text</label><br>
-            </div>
-            <div class="form">
-                <p class="news">Other topics you'd like to hear about</p>
-                <label for="other"></label>
-                <textarea name="other" id="other" cols="30" rows="10"></textarea><br>
+                <div>
+                    <label for="html">
+                    <input type="radio" id="html" name="format">
+                    HTML</label><br>
+                </div>
+
+                <div>
+                    <label for="plain">
+                    <input type="radio" id="plain" name="format">
+                    Plain text</label><br>
+                </div>
+            
+                <div class="form">
+                    <p class="news">Other topics you'd like to hear about</p>
+                    <label for="other"></label>
+                    <textarea name="other" id="other" cols="30" rows="10"></textarea><br>
 
 
-                <input type="submit" id="submit" value="Sign Up">
-            </div>
+                    <input type="submit" id="submit" value="Sign Up">
+                </div>
+            </legend>
             
             
 
@@ -105,6 +132,6 @@
 
 
         </form>
-    </div>
+    
 </body>
 </html>
